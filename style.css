@@ -1,0 +1,154 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #010e1c;
+  color: #fff;
+}
+
+/* Theme Styling */
+[data-theme="light"] body {
+  background-color: #f4f4f4;
+  color: #010e1c;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  padding: 10px 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .nav-link {
+  color: #fff;
+}
+
+[data-theme="dark"] .nav-link:hover {
+  background-color: #4ae289;
+  color: #010e1c;
+}
+
+[data-theme="light"] .nav-link {
+  color: #010e1c;
+}
+
+[data-theme="light"] .nav-link:hover {
+  background-color: #cde4b3;
+  color: #010e1c;
+}
+
+/* Logo Styling */
+.logo {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #6a5acd, #1e90ff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.letter {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(27, 27, 27, 0.8);
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.letter.h {
+  color: #4ae289;
+}
+
+.letter.a {
+  color: #590219;
+}
+
+/* Containers */
+.container {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  height: 55%;
+}
+
+.left-container {
+  margin: 20px;
+  margin-top: 90px;
+}
+
+.option-input {
+  margin: 10px 0;
+  width: 60%;
+  border: 2px solid #010e1c;
+  border-radius: 5px;
+  padding: 5px;
+  height: 2rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.option-input:focus {
+  border-color: #4ae289;
+}
+
+.option-name {
+  margin-left: 60px;
+  font-size: 1.2rem;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="dark"] .option-name:hover {
+  background-color: #2bab0d;
+  border-radius: 3px;
+}
+
+[data-theme="light"] .option-name:hover {
+  background-color: #cde4b3;
+  border-radius: 3px;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+  cursor: pointer;
+  font-size: 27px;
+}
+
+/* Buttons in Navbar */
+.navbar button {
+  background: linear-gradient(135deg, #6a5acd, #1e90ff);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+  background: #4ae289;
+  color: #010e1c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
